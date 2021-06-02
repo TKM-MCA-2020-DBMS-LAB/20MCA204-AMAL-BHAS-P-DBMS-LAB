@@ -93,6 +93,11 @@ mysql> create procedure updatesal(IN Param1 int)
     -> end; //
 Query OK, 0 rows affected (0.90 sec)
 
+
+mysql> delimiter ;
+mysql> call updatesal(501);
+Query OK, 1 row affected (0.18 sec)
+
 mysql> call updatesal(502);
 Query OK, 0 rows affected (0.00 sec)
 
